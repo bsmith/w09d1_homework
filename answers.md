@@ -1,3 +1,9 @@
+# Diagram
+
+!(diagram)[diagram.jpeg]
+
+# Questions
+
 ## Q: "What is responsible for defining the routes of the games resource?"
 
 createRouter inside helpers/create_router.js
