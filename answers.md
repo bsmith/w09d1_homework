@@ -40,3 +40,10 @@ It only uses GET /, POST / and delete /:id relative to the baseURL which gives a
 
 The MongoDB Driver is used to make asynchronous database requests in the API router.
 
+# Extension
+
+It looks like ObjectId is a distinct datatype in the BSON wire-format that mongodb uses.  So it needs to map to distinct type in the driver.  (Is this because you can put an ObjectId in an arbitrary attribute of your document to implement something like a 'foreign key'?)
+
+
+Deletion flow (w/o diagram): Very similar, but initiated by a button in the GameCard.  Then goes through GameGrid to the GameContainer, before going to GamesService.  A difference is that no response is passed back.  The GameContainer has it's own logic to update the 'games' state to mirror the state in the database.
+
