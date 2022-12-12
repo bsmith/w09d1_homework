@@ -1,6 +1,6 @@
 # Diagram
 
-!(diagram)[diagram.jpeg]
+![diagram](diagram.jpeg)
 
 # Questions
 
